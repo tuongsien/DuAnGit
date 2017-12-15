@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Admin - page</title>
+  
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+  <link href="css/admin.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+
+<body class="fixed-nav sticky-footer bg-light" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html">CyberSoft</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="charts.html">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text">Charts</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="tables.html">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">Tables</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-wrench"></i>
+            <span class="nav-link-text">Components</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents">
+            <li>
+              <a href="navbar.html">Navbar</a>
+            </li>
+            <li>
+              <a href="cards.html">Cards</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">Example Pages</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+            <li>
+              <a href="login.html">Login Page</a>
+            </li>
+            <li>
+              <a href="register.html">Registration Page</a>
+            </li>
+            <li>
+              <a href="forgot-password.html">Forgot Password Page</a>
+            </li>
+            <li>
+              <a href="blank.html">Blank Page</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-sitemap"></i>
+            <span class="nav-link-text">Menu Levels</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseMulti">
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
+              <ul class="sidenav-third-level collapse" id="collapseMulti2">
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-link"></i>
+            <span class="nav-link-text">Link</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <form class="form-inline my-2 my-lg-0 mr-lg-2">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Navbar</li>
+      </ol>
+ 
+      <div class="row">
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3>152</h3>
+
+              <p>Tin nhắn</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-comment"></i>
+            </div>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h3>53</h3>
+
+              <p>Lượt xem</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-eye"></i>
+            </div>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3>44</h3>
+
+              <p>Lượt chia sẻ</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-share-alt"></i>
+            </div>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-red">
+            <div class="inner">
+              <h3>65</h3>
+
+              <p>Thành viên</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-users"></i>
+            </div>
+          </div>
+        </div>
+        <!-- ./col -->
+      </div>
+  
+      <div class="row tow">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <div class="titl">
+            <h2>Vùng miền</h2>
+            <img class="img-fluid" src="imgs/trd.jpg">
+          </div>
+        </div>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+           <div class="titl">
+            <h2>Tin mới</h2>
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-dark">
+                <i class="fa fa-user"></i>
+                <h4>Thành viên mới. Lượt view quá cao</h4>
+                <strong>10 phút</strong>
+              </li>        
+              <li class="list-group-item list-group-item-light">
+                <i class="fa fa-bell"></i>
+                <h4>Lỗi cơ sở dữ liệu</h4>
+                <strong>10 phút</strong>
+              </li>
+              <li class="list-group-item list-group-item-dark ">
+                <i class="fa fa-users"></i>
+                <h4>Thành viên mới hơn 43 thành viên</h4>
+                <strong>10 phút</strong>
+              </li>
+              <li class="list-group-item list-group-item-light">
+                <i class="fa fa-comment"></i>
+                <h4>Bình luận mới</h4>
+                <strong>10 phút</strong>
+              </li>
+              <li class="list-group-item list-group-item-dark">
+                <i class="fa fa-bookmark"></i>
+                <h4>Kiểm tra các thao tác</h4>
+                <strong>19 phút</strong>
+             </li>
+              <li class="list-group-item list-group-item-light">
+                <i class="fa fa-desktop"></i>
+                <h4>Cpu đang quá tải</h4>
+                <strong>30 phút</strong>
+              </li>
+              <li class="list-group-item list-group-item-dark">
+                <i class="fa fa-share-alt"></i>
+                <h4>Lượt share mới</h4>
+                <strong>50 phút</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row three">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="titl">
+            <h2>Thống kê tổng quan</h2>
+          </div>
+           <div class="skills">
+          <div class="name-skill">Khách mới truy cập</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 60%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
+          <div class="name-skill">Thành viên mới</div>
+          <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
+          </div>
+          <div class="name-skill">Tỉ lệ Bounce</div>
+          <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">80%</div>
+          </div>
+        </div>
+        </div>    
+      </div>
+
+      <div class="row four">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="titl">
+            <h2>Quốc gia</h2>
+          </div>
+          <ul class="list-group qq">      
+            <li class="list-group-item list-group-item-dark bd">
+             <h4>Việt Nam</h4>
+                <strong>65%</strong>
+            </li>
+            <li class="list-group-item list-group-item-light bd">
+               <h4>UK</h4>
+                <strong>15%</strong>
+            </li>
+             <li class="list-group-item list-group-item-dark bd">
+             <h4>Russia</h4>
+                <strong>10%</strong>
+            </li>
+            <li class="list-group-item list-group-item-light bd">
+               <h4>Spain</h4>
+                <strong>5%</strong>
+            </li>
+            <li class="list-group-item list-group-item-dark bd">
+             <h4>India</h4>
+                <strong>2%</strong>
+            </li>
+             <li class="list-group-item list-group-item-light bd">
+               <h4>France</h4>
+                <strong>1%</strong>
+            </li>
+          </ul>
+          <div class="bnt">
+            <button type="button" class="btn btn-dark">Xem thêm<i class="fa fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row five ">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="titl">
+              <h2>Thành viên gần đây</h2>
+            </div>
+            <ul class="list-group qq sd">
+              <li class="list-group-item bd rf">
+                <img class=" rounded-circle" src="imgs/avatar.png">
+                <strong class="name-tv">Khải</strong>
+              </li>
+              <li class="list-group-item bd rf">
+                <img class=" rounded-circle" src="imgs/avatar04.png">
+                <strong class="name-tv">Trương</strong>
+              </li>
+              <li class="list-group-item bd rf">
+                <img class=" rounded-circle" src="imgs/avatar5.png">
+                <strong class="name-tv">Tưởng</strong>
+              </li>
+              <li class="list-group-item bd rf">
+                 <img class=" rounded-circle" src="imgs/avatar3.png">
+                  <strong class="name-tv">Thảo</strong>
+              </li>
+            </ul>
+          </div>
+      </div> 
+
+      <div class="row six ">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="titl">
+              <h2>Bình luận gần đây</h2>
+            </div>
+            <div class="row">
+              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                  
+                    <img class="img-fluid rounded-circle" src="imgs/avatar5.png">
+     
+              </div>
+              <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                  <div class="nd">
+                   
+                    <p> 
+                      <strong>Tùng</strong><span>cách đây 10 phút</span><br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat noproident.
+                    <p>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                
+                    <img class="img-fluid rounded-circle" src="imgs/avatar04.png">
+                
+              </div>
+              <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                  <div class="nd">
+                    <p>
+                      <strong>Hùng</strong><span>cách đây 20 phút</span><br><br>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat noproident.</p>
+                  </div>
+              </div>    
+            </div>
+          </div>         
+      </div>
+
+
+      <div class="row seven">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left">
+            <div class="svtl">
+              <h3>Minh họa</h3>
+            </div>
+            <div class="dk"></div>
+            <ul>
+              <li>Ngôn ngữ</li>
+              <li>Quốc gia</li>
+              <li>Thành phố</li>
+            </ul>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left">
+            <div class="svtl">
+              <h3>Hệ thống</h3>
+            </div>
+            <div class="dk"></div>
+             <ul>
+              <li>Trình duyệt</li>
+              <li>Hệ điều hành</li>
+              <li>Khác</li>
+            </ul>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left">
+          <div class="svtl">
+              <h3>Mục tiêu</h3>
+          </div>
+          <div class="dk"></div>
+           <ul>
+              <li>Thành viên</li>
+              <li>Hoạt động</li>
+              <li>Địa lý</li>
+              <li>Sở thích</li>
+            </ul>
+        </div>
+      </div>
+
+
+      <div style="height: auto;"></div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Your Website 2017</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/admin.min.js"></script>
+    <!-- Toggle between fixed and static navbar-->
+    <script>
+    $('#toggleNavPosition').click(function() {
+      $('body').toggleClass('fixed-nav');
+      $('nav').toggleClass('fixed-top static-top');
+    });
+
+    </script>
+    <!-- Toggle between dark and light navbar-->
+    <script>
+    $('#toggleNavColor').click(function() {
+      $('nav').toggleClass('navbar-dark navbar-light');
+      $('nav').toggleClass('bg-dark bg-light');
+      $('body').toggleClass('bg-dark bg-light');
+    });
+
+    </script>
+  </div>
+</body>
+
+</html>
